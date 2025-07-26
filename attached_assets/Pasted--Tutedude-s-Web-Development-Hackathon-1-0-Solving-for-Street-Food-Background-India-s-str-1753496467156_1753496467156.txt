@@ -1,0 +1,318 @@
+# Tutedude’s Web Development Hackathon 1.0 – Solving for Street Food
+
+## Background
+
+India’s street food scene is vibrant, loved, and chaotic. But behind every delicious plate of chaat or dosa, there’s a hidden struggle, raw material sourcing. Most street vendors have to manage quality, pricing, and availability on their own. There’s no structured system, no trusted platform, and definitely no easy access to affordable supplies.
+
+This Web Hackathon invites you to solve this real, everyday problem through tech. Your job isn’t just to build a cool UI, it’s to create a digital solution that could actually make a difference to the lives of food vendors.
+
+<aside>
+💡
+
+**Tech Stack:** You are free to use any tech stack of your choice. Tools like Replit, Firebase, Lovable, Google Stitch, ChatGPT, and others are allowed. Hosting can be done via Netlify, Vercel, or any other preferred platform.
+
+</aside>
+
+![image.png](attachment:63465cba-ffe8-43bd-baae-7f3b38615399:image.png)
+
+---
+
+## The Problem
+
+We’re not giving you a fixed problem statement. What you have is a broad, open-ended challenge:
+
+**“In India, street food vendors have a problem with bringing in raw materials from trusted and cheap vendors.”**
+
+Explore this ecosystem. Think about how vendors operate, where they face pain, how the supply chain works, and how trust plays a role. Talk to real people, observe, question, validate.
+
+Your task is to pick a specific angle of this issue and build a web-based digital solution that solves it.
+
+---
+
+## What You Have To Do
+
+- Pick a real, specific pain point within the raw material sourcing problem
+- Develop a clear, functional, user-first web app
+- Build a fully functional product (no figma-only solution)
+- Create the product from both ends: vendor side and service provider side
+- Submit a video submission duration 5-6 min
+- Present it in a crisp and compelling pitch
+- Make sure your product is live and hosted (Netlify, Vercel, etc.)
+
+<aside>
+👉🏻
+
+You can (and are encouraged to) use **AI** to solve real problems. But if you’re using AI, the solution musty be **fully functional and working**, not just theoretical or placeholder-based. 
+
+Use whatever helps you build fast. Frontend, backend, AI tools, API. **Go crazy, as long as it's a functioning web app.**
+
+Feel free to use tools and platforms like
+
+**Replit, Lovable, Firebase Studio, Google Stitch, ChatGPT, custom APIs, or any tech stack/tool** that helps you bring the idea to life.
+
+</aside>
+
+---
+
+## What You Should Not Do
+
+- Don’t copy an existing app and just redesign the UI.
+- Don’t solve a generic problem without any real insight or context.
+- Avoid dumping every idea into one solution. Simpler is smarter.
+- Don’t submit without testing your concept with real users or scenarios.
+
+---
+
+## Objectives of This Hackathon
+
+This event will address the above issues by encouraging students to:
+
+1. Collaborate and use their creativity to solve a very broad and abstract problem.
+2. Learn the process of product building, including ideation, design, development, and pitching.
+3. Build a Minimum Demonstrable Product (MDP) for the problem.
+
+---
+
+## Solution Guidelines
+
+The solution must be a **digital web-based solution** (no physical/hybrid ideas). You’re encouraged to integrate custom algorithms, AI models, or other advanced tech to boost functionality.
+
+You’re free to choose any tech stack that fits your approach.
+
+The goal is to build a unique, practical, and functional solution to the given abstract problem.
+
+**Note:** Don't make a landing page or website showcasing the features. We need the **actual working solution** that directly solves the core problem. Focus entirely on the **solution, not its presentation**.
+
+<aside>
+⚠️
+
+**Design Guidelines**
+
+You can use any design system or style you are comfortable with. It can be Material, iOS, Shadcn or your own setup. Just make sure it is clean, easy to follow and not confusing. Do not overload the screen. Use simple patterns that anyone can understand. 
+
+</aside>
+
+**Example Scenario**
+
+Let’s say the broad problem is
+
+**“Street food vendors struggle to find affordable raw materials.”**
+
+Bad solution: A basic website saying "Buy cheap materials here" with no actual sourcing system.
+
+Good solution: A web app where vendors can search verified suppliers nearby, compare prices, place group orders, or even track delivery.
+
+*Note: this example is just for understanding. Do not use this idea as a solution, otherwise no evaluation will be done.*
+
+---
+
+## Deliverables
+
+| Solution explanation video (Mandatory) | A short video of about **5 mins max**, where you explain your idea and show how the flow works. Keep it clear and simple. Keep it crisp. Focus on showing how it works. Skip button-by-button walkthroughs. |
+| --- | --- |
+| Coded File (GitHub) | All the source code files uploaded to a GitHub repository. |
+| Public Solution Deployed Link | Provide a working link to your coded solution that is hosted on a server like Netlify, Vercel, or any other hosting platform. This should not be a design prototype but the actual fully functional solution. Ensure the link is accessible publicly. |
+
+<aside>
+⚠️
+
+Do not copy from any source. Any plagiarism will result in team disqualification.
+
+</aside>
+
+---
+
+## Evaluation Criteria
+
+1. Is the chosen problem relevant and impactful?
+2. How unique the solution is, what's different about it?
+3. Does the prototype work as intended and is completely functional?
+4. How user-friendly and visually appealing is the design?
+5. How clearly is the problem and solution communicated in the demo video? ***(VERY IMPORTANT, BE CREATIVE)***
+
+<aside>
+💡
+
+Note: The web app should be complete and fully functional. ***We will judge based on the number of perfectly working features in the dedicated time duration.*** Submitting half-built or broken links will affect your score.
+
+</aside>
+
+---
+
+### Tips to Win
+
+- Pick a very specific use-case. Niche > Broad.
+- Validate your problem with real people.
+- Build something that works, even if it’s small.
+- Make your demo video feel like a product pitch, don’t bore us ;p
+- Prioritize simplicity, especially in UI and storytelling.
+- Don’t focus only on tech, explain the *why* behind your choices.
+
+<aside>
+💡
+
+Doesn’t matter if you’ve got a ton of features, if they don’t work properly, they’re useless. Every feature you build should be fully functional and handle edge cases too.
+
+</aside>
+
+---
+
+## **Post Your work on Linkedin & get 10 Extra Points**
+
+<aside>
+🔥
+
+- Write about your hackathon experience on LinkedIn with Tutedude | About your teamwork | What you have learned throughout the hackathon and more.
+- Post (Screenshot or Video) of your final Design and on LinkedIn
+- Tag your Teammates and Tutedude (on LinkedIn)
+
+https://www.linkedin.com/company/tutedudeofficial/
+
+- Add the link of your LinkedIn post in this google form during submission.
+</aside>
+
+---
+
+## Timeline
+
+- **Hackathon Launch:** 25th July 2025
+- **Submission Deadline:** **July 27, 11:59 PM**
+- **Winner Team Prize:** ₹8,000/- (Cash)
+- **Winners Announcement:** Within a week
+- **Participation Certificates:** All participants will receive a certificate.
+
+---
+
+## Submission Guidelines
+
+- All submissions should be made in a digital format.
+- Submission should be only one per team.
+- Solution explanation video must be uploaded to Drive or YouTube (unlisted) and linked.
+- Make all links public, otherwise, they won’t be evaluated.
+
+<aside>
+⚠️
+
+- Solution explanation video should not exceed **5 minutes.**
+- Team information (roles, names, contributions) must also be included in the Solution explanation video or the design file. **This is mandatory.**
+</aside>
+
+**NOTE: Failing to include team member information may result in difficulties identifying the ownership of the submission.**
+
+---
+
+## Solution Submission Link
+
+<aside>
+👉🏻
+
+https://forms.gle/5feuV5BmgZ1qKoiX7
+
+</aside>
+
+**DEADLINE: JULY 27 2025, 11:59PM**
+
+---
+
+## Resources (Valuable)
+
+https://youtu.be/JpYA7WXkHyI?si=rvd_JdXmEeY1tMAD
+
+https://youtu.be/mtn31hh6kU4?si=01Jyk6eoCgRZ8n5v
+
+https://youtu.be/bEusrD8g-dM?si=73g0vZ8dftjVPbCW
+
+---
+
+## Who This Is For
+
+This is for students, builders, developers designers, and aspiring founders who:
+
+- Want to build something impactful and portfolio-worthy
+- Enjoy solving open-ended problems
+- Care about product thinking, user experience, and technology
+- Want to push beyond tutorials and templates
+
+**Take your time to understand the problem. Do not jump into Solution directly. Think like a user and a builder.** 
+
+<aside>
+📌
+
+- ***A NOTE FOR YOU :)***
+    
+    Your Roles:
+    Whether you're a designer, developer, or problem solver, this Hackathon needs you! Here's how you can shine in your role:
+    
+    🎨 If You’re a Designer:
+    Your strength is empathy and clarity.
+    Dive deep into the user’s journey.
+    Create clean, intuitive, and user-first designs.
+    Translate chaos into simplicity using Figma/XD or even pen & paper.
+    
+    What you bring: User flow, wireframes, prototypes, and final UI.
+    
+    💻 If You’re a Developer:
+    Your strength is execution and logic.
+    Convert the team’s ideas into real, functional tools.
+    Set up backend systems, connect APIs, build interfaces that work.
+    Focus on performance, usability, and security.
+    
+    What you bring: Functional MVP, GitHub repo, and deployed link.
+    
+    🧠 If You’re a Problem Solver (PM, Thinker, Researcher):
+    Your strength is critical thinking and user insight.
+    Talk to real users, validate the idea, define the real pain point.
+    Keep the team focused on solving the right problem.
+    Ensure the solution is practical, scalable, and pitch-ready.
+    
+    What you bring: Research notes, problem framing, and pitch clarity.
+    
+    Don’t worry if you’re not a coding expert, designer, or experienced builder.
+    
+    Today, AI tools and smart platforms can help you create real solutions — fast.
+    
+    Here are some powerful tools you can use:
+    
+    Lovable – Generate working MVPs using AI (great for quick backend + frontend)
+    
+    UXPilot – Get AI help for user research, personas, journey maps, etc.
+    
+    Whimsical – Make user flows, wireframes, and idea maps visually
+    
+    BoltAI / ChatGPT – Use AI to brainstorm ideas, write content, or even help code
+    
+    Replit / Firebase / Glide / Bravo Studio – No-code or low-code platforms to build fast
+    
+    Canva / Figma AI – Design stunning UI with drag-and-drop or AI-assisted suggestions
+    
+    You don’t need to know everything. You just need to start.
+    
+</aside>
+
+---
+
+## FAQs
+
+- **What kind of problem will we be solving?**
+    
+    The problem will be broad and open-ended, allowing you to come up with unique and creative solutions.
+    
+- **Is there any restriction on the technology stack we use?**
+    
+    No, you are free to use any tools, programming languages, or technologies you prefer for the solution.
+    
+- **Is mentorship available during the event?**
+    
+    Yes, mentors will be available during the hackathon to guide you and answer your questions.
+    
+- **What if someone in our team drops out during the event?**
+    
+    Your team can continue with the remaining members, but you will need to adjust roles and responsibilities accordingly.
+    
+- **Will our solution remain our intellectual property?**
+    
+    Yes, the solution you create will belong to you and your team.
+    
+- **Can we use AI, ChatGPT, third-party tools, APIs, or libraries in our solution?**
+    
+    Yes You can.
