@@ -158,6 +158,9 @@ router.get('/:id', auth, async (req, res) => {
 // @route   POST /api/orders
 // @desc    Create new order (vendors only)
 // @access  Private - Vendor only
+// @route   POST /api/orders
+// @desc    Create new order (vendors only)
+// @access  Private - Vendor only
 router.post('/', auth, authorize('vendor'), async (req, res) => {
   try {
     const { items, deliveryAddress, phone, notes } = req.body;
@@ -231,6 +234,10 @@ router.post('/', auth, authorize('vendor'), async (req, res) => {
       });
     }
 
+    // ✅ Calculate totalAmount and generate orderNumber
+    const totalAmount = orderItems.reduce((sum, item) => sum + item.subtotal, 0);
+    const orderNumber = `ORD-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
+
     // Create order
     const order = new Order({
       vendorId: req.user._id,
@@ -241,7 +248,9 @@ router.post('/', auth, authorize('vendor'), async (req, res) => {
       items: orderItems,
       deliveryAddress: deliveryAddress.trim(),
       phone: phone.trim(),
-      notes: notes?.trim()
+      notes: notes?.trim(),
+      totalAmount,       // ✅ Required field
+      orderNumber        // ✅ Required field
     });
 
     await order.save();

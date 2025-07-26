@@ -114,7 +114,9 @@ router.post('/login', async (req, res) => {
         totalRatings: user.totalRatings,
         createdAt: user.createdAt
       }
+
     });
+    console.log(`User ${user.email} logged in successfully`);
   } catch (error) {
     console.error('Login error:', error);
     res.status(500).json({ message: 'Server error during login' });

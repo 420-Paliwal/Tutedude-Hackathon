@@ -52,7 +52,7 @@ const Navbar = () => {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className="flex items-center space-x-1 text-gray-700 hover:text-primary-600 transition-colors duration-200 px-3 py-2 rounded-md hover:bg-gray-100"
+                  className="flex items-center space-x-1 text-gray-700 hover:text-primary-600 transition-colors duration-200 py-2 rounded-md hover:bg-gray-100"
                 >
                   <span>{link.icon}</span>
                   <span className="font-medium">{link.label}</span>
