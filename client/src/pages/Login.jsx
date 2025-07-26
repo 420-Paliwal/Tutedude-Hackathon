@@ -120,7 +120,7 @@ const Login = () => {
         {/* Demo Accounts */}
         <div className="card">
           <div className="card-content">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Demo Accounts</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Demo Accounts <span className='text-xs'>(can register too)</span></h3>
             <div className="space-y-3 text-sm">
               <div className="p-3 bg-blue-50 rounded-lg">
                 <p className="font-medium text-blue-900">🧑‍🍳 Vendor Account</p>
