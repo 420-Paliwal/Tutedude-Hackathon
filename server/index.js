@@ -33,13 +33,13 @@ app.get('/api/health', (req, res) => {
 });
 
 // Serve static files from the React app in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/dist')));
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static(path.join(__dirname, '../client/dist')));
   
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
-  });
-}
+//   app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+//   });
+// }
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI)
