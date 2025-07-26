@@ -40,7 +40,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-primary-600">
+            <div className="text-xl font-bold text-primary-600">
               🏪 BazaarBuddy
             </div>
           </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
           )}
 
           {/* User Menu */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 ml-2">
             {user ? (
               <div className="flex items-center space-x-2">
                 <div className="text-xs">
