@@ -14,6 +14,8 @@ import OrderHistory from './pages/OrderHistory';
 import OrderDetails from './pages/OrderDetails';
 import Profile from './pages/Profile';
 import LoadingSpinner from './components/LoadingSpinner';
+import CreateGroupOrder from './pages/CreateGroupOrder';
+import JoinGroupOrder from './pages/JoinGroupOrder';
 
 // Protected Route Component
 const ProtectedRoute = ({ children, requiredRole = null }) => {
@@ -124,7 +126,8 @@ function App() {
                     <Profile />
                   </ProtectedRoute>
                 } />
-
+                <Route path="/group/create" element={<CreateGroupOrder/>} />
+        <Route path="/group/join" element={<JoinGroupOrder/>} />
                 {/* Catch all route */}
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>

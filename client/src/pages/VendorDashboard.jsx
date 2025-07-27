@@ -284,6 +284,25 @@ const fetchRecommendations = async () => {
               <span className="text-sm font-medium">Packaging</span>
             </Link>
           </div>
+
+         {/* group section  */}
+         <div>
+    <h2 className="text-xl font-semibold mb-4">Group Orders</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <Link to="/group/create" className="flex flex-col items-center p-6 bg-white rounded-lg hover:shadow-md transition-shadow">
+        <span className="text-4xl mb-2">👥</span>
+        <span className="text-lg font-medium">Create Group Order</span>
+      </Link>
+
+      <Link to="/group/join" className="flex flex-col items-center p-6 bg-white rounded-lg hover:shadow-md transition-shadow">
+        <span className="text-4xl mb-2">🤝</span>
+        <span className="text-lg font-medium">Join Group Order</span>
+      </Link>
+    </div>
+    </div>
+
+
+
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const path = require('path');
-// const recommendationRoutes = require('./routes/recommendations');
+
 require('dotenv').config();
 
 
@@ -11,6 +11,7 @@ require('dotenv').config();
 const authRoutes = require('./routes/auth');
 const productRoutes = require('./routes/products');
 const orderRoutes = require('./routes/orders');
+const groupOrderRoutes = require('./routes/groupOrders');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -23,8 +24,8 @@ app.use(bodyParser.urlencoded({ extended: true, limit: '10mb' }));
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
-// app.use('/api/products', recommendationRoutes);
 app.use('/api/orders', orderRoutes);
+app.use('/api/group-orders', groupOrderRoutes);
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {

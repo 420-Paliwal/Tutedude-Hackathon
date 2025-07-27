@@ -27,7 +27,7 @@ const Navbar = () => {
         { to: '/products', label: 'Browse Products', icon: '🛍️' },
         { to: '/cart', label: `Cart (${getCartCount()})`, icon: '🛒' },
         { to: '/orders', label: 'My Orders', icon: '📦' },
-        { to: '/profile', label: 'Profile', icon: '👤' }
+        { to: '/profile', label: 'Profile', icon: '👤' },
       ];
     }
     
@@ -60,6 +60,9 @@ const Navbar = () => {
               ))}
             </div>
           )}
+
+          
+
 
           {/* User Menu */}
           <div className="flex items-center space-x-4 ml-2">
