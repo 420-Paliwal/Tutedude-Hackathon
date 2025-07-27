@@ -5,3 +5,4 @@ replit.md
 attached_assets/
 *.log
 package-lock.json
+.env
