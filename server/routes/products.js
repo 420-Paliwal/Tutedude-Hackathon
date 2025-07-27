@@ -1,5 +1,6 @@
 const express = require('express');
 const Product = require('../models/Product');
+const Order = require('../models/Order');
 const { auth, authorize } = require('../middleware/auth');
 
 const router = express.Router();
@@ -103,6 +104,55 @@ router.get('/', async (req, res) => {
     res.status(500).json({ message: 'Server error while fetching products' });
   }
 });
+
+
+// Recommend products based on vendor's order history
+router.get('/recommendations',auth, authorize('vendor'), async (req, res) => {
+  try {
+    const vendorId = req.user._id;
+
+    // 1. Get last 5 orders of vendor
+    const recentOrders = await Order.find({ vendor: vendorId })
+      .sort({ createdAt: -1 })
+      .limit(5)
+      .populate('items.product');
+
+    // 2. Extract all ordered categories
+    const categoryCount = {};
+    recentOrders.forEach(order => {
+      order.items.forEach(({ product }) => {
+        const category = product.category || 'other';
+        categoryCount[category] = (categoryCount[category] || 0) + 1;
+      });
+    });
+
+    // 3. Sort categories by frequency
+    const sortedCategories = Object.keys(categoryCount).sort(
+      (a, b) => categoryCount[b] - categoryCount[a]
+    );
+
+    let recommended = [];
+
+    // 4. Get top products from top 2 categories
+    for (let i = 0; i < Math.min(2, sortedCategories.length); i++) {
+      const products = await Product.find({ category: sortedCategories[i] })
+        .sort({ rating: -1 })
+        .limit(3);
+      recommended.push(...products);
+    }
+
+    // 5. Fallback if no orders
+    if (recommended.length === 0) {
+      recommended = await Product.find().sort({ rating: -1 }).limit(6);
+    }
+
+    res.json({ recommended });
+  } catch (error) {
+    console.error('Recommendation error:', error);
+    res.status(500).json({ error: 'Failed to generate recommendations' });
+  }
+});
+
 
 // @route   GET /api/products/:id
 // @desc    Get single product by ID
@@ -332,5 +382,4 @@ router.delete('/:id', auth, authorize('supplier'), async (req, res) => {
     res.status(500).json({ message: 'Server error during product deletion' });
   }
 });
-
 module.exports = router;

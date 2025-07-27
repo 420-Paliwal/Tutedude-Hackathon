@@ -38,12 +38,12 @@ const productSchema = new mongoose.Schema({
   imageURL: {
     type: String,
     trim: true,
-    validate: {
-      validator: function(v) {
-        return !v || /^https?:\/\/.+\.(jpg|jpeg|png|gif|webp)$/i.test(v);
-      },
-      message: 'Please provide a valid image URL'
-    }
+    // validate: {
+    //   validator: function(v) {
+    //     return !v || /^https?:\/\/.+/.test(v);
+    //   },
+    //   message: 'Please provide a valid image URL'
+    // }
   },
   minOrderQuantity: {
     type: Number,

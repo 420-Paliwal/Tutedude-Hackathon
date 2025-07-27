@@ -3,7 +3,9 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const path = require('path');
+// const recommendationRoutes = require('./routes/recommendations');
 require('dotenv').config();
+
 
 // Import routes
 const authRoutes = require('./routes/auth');
@@ -21,6 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true, limit: '10mb' }));
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
+// app.use('/api/products', recommendationRoutes);
 app.use('/api/orders', orderRoutes);
 
 // Health check endpoint
@@ -56,6 +59,7 @@ mongoose.connect(process.env.MONGODB_URI)
   console.error('❌ MongoDB connection error:', error);
   process.exit(1);
 });
+
 
 // Error handling middleware
 app.use((err, req, res, next) => {
