@@ -17,7 +17,7 @@ const VendorDashboard = () => {
 
   useEffect(() => {
     fetchDashboardData();
-    fetchRecommendations();
+    // fetchRecommendations();
   }, []);
 
   const [recommended, setRecommended] = useState([]);
