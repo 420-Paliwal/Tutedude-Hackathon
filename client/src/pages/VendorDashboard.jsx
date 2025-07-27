@@ -5,6 +5,7 @@ import { useCart } from '../contexts/CartContext';
 import api from '../utils/api';
 import LoadingSpinner from '../components/LoadingSpinner';
 import OrderCard from '../components/OrderCard';
+import ProductCard from '../components/ProductCard';
 
 const VendorDashboard = () => {
   const { user } = useAuth();
@@ -16,7 +17,20 @@ const VendorDashboard = () => {
 
   useEffect(() => {
     fetchDashboardData();
+    fetchRecommendations();
   }, []);
+
+  const [recommended, setRecommended] = useState([]);
+
+const fetchRecommendations = async () => {
+  try {
+    const res = await api.get('/products/recommendations');
+    setRecommended(res.data.recommended);
+  } catch (err) {
+    console.error('Failed to fetch recommendations:', err.message);
+  }
+};
+
 
   const fetchDashboardData = async () => {
     try {
@@ -145,6 +159,20 @@ const VendorDashboard = () => {
           </div>
         </div>
       )}
+
+
+      {/* Recommendations */}
+      <div className="my-8">
+  <h2 className="text-xl font-bold mb-2">🤖 Smart Recommendations</h2>
+  <button className="btn btn-primary mb-4" onClick={fetchRecommendations}>
+    Show Recommended Products
+  </button>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {recommended.map(product => (
+      <ProductCard key={product._id} product={product} />
+    ))}
+  </div>
+</div>
 
       {/* Recent Orders */}
       <div>
